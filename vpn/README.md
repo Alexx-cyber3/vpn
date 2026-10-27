@@ -388,7 +388,7 @@ Key Findings:
 - **Mobile‑Responsive Dashboard** – Improve Tailwind breakpoints and component layout for seamless use on tablets and small laptops.
 
 ---
------demo video link:
+-----demo video link: https://drive.google.com/drive/folders/1V2UhN1_sMpwQ1epdvcjTuEpuOYWIv_Xj
 ## 📜 License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
