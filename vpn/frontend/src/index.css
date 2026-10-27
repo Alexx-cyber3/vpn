@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #ef4444;
+  --color-primary-hover: #dc2626;
+  --color-secondary: #f43f5e;
+  --color-bg-main: #050204;
+  --color-text-main: #ffffff;
+  --color-text-muted: #cbd5e1;
+  --glass-bg-panel: linear-gradient(135deg, rgba(30, 8, 15, 0.72) 0%, rgba(15, 3, 7, 0.82) 100%);
+  --glass-bg-card: linear-gradient(135deg, rgba(40, 10, 20, 0.6) 0%, rgba(20, 5, 10, 0.75) 100%);
+  --glass-border: rgba(239, 68, 68, 0.25);
+  --glass-border-hover: rgba(239, 68, 68, 0.45);
+  --shadow-glow-red: 0 0 25px -3px rgba(239, 68, 68, 0.4);
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+  }
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Cyber Background with Overlay */
+.cyber-bg-container {
+  background-image: linear-gradient(to bottom, rgba(15, 3, 7, 0.88), rgba(5, 2, 4, 0.94)), url('/cyber_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Centralized Design Token Utility Classes */
+.glass-panel, .liquid-glass-panel {
+  background: var(--glass-bg-panel);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.glass-card, .liquid-glass-card {
+  background: var(--glass-bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 20px 0 rgba(239, 68, 68, 0.08), inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.liquid-glass-card:hover {
+  border-color: var(--glass-border-hover);
+  box-shadow: 0 8px 30px 0 rgba(239, 68, 68, 0.25), inset 0 1px 2px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* Glowing Accents */
+.glow-red {
+  box-shadow: var(--shadow-glow-red);
+}
+
+.glow-rose {
+  box-shadow: 0 0 25px -3px rgba(244, 63, 94, 0.4);
+}
+
+.glow-white {
+  box-shadow: 0 0 25px -3px rgba(255, 255, 255, 0.3);
+}
+
+/* Custom Reddish Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0306;
+}
+::-webkit-scrollbar-thumb {
+  background: #991b1b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}

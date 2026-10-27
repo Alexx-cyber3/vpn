@@ -1,0 +1,14 @@
+Sep 26 10:14:02 gateway charon: 01[IKE] received IKE_SA_INIT request from 198.51.100.45
+Sep 26 10:14:02 gateway charon: 01[IKE] sending IKE_SA_INIT response to 198.51.100.45
+Sep 26 10:14:03 gateway charon: 02[IKE] received IKE_AUTH request from 198.51.100.45
+Sep 26 10:14:03 gateway charon: 02[IKE] AUTHENTICATION FAILED for user 'admin' from 198.51.100.45
+Sep 26 10:14:05 gateway charon: 03[IKE] received IKE_AUTH request from 198.51.100.45
+Sep 26 10:14:05 gateway charon: 03[IKE] AUTHENTICATION FAILED for user 'admin' from 198.51.100.45
+Sep 26 10:14:07 gateway charon: 04[IKE] received IKE_AUTH request from 198.51.100.45
+Sep 26 10:14:07 gateway charon: 04[IKE] AUTHENTICATION FAILED for user 'admin' from 198.51.100.45
+Sep 26 10:14:09 gateway charon: 05[IKE] SECURITY ALERT: BRUTE_FORCE_ATTACK detected from 198.51.100.45 (4 failed auth attempts)
+Sep 26 10:15:20 gateway charon: 06[IKE] received IKE_SA_INIT request from 203.0.113.88
+Sep 26 10:15:20 gateway charon: 06[IKE] NO_PROPOSAL_CHOSEN notify received from 203.0.113.88 - unsupported proposal aes128-sha1-modp1024
+Sep 26 10:16:10 gateway charon: 07[IKE] DPD TIMEOUT on connection 'branch-office-01' to 198.51.100.90
+Sep 26 10:16:40 gateway charon: 08[IKE] DPD TIMEOUT retransmission #2 for connection 'branch-office-01'
+Sep 26 10:17:15 gateway charon: 09[IKE] connection 'branch-office-01' RECONNECTED to 198.51.100.90
